@@ -1,0 +1,36 @@
+<script>
+function cek(){
+
+let nomor = document.getElementById("nomor").value;
+let hasil = "Operator tidak diketahui";
+
+if(nomor.startsWith("0811")||nomor.startsWith("0812")||nomor.startsWith("0813")||
+nomor.startsWith("0821")||nomor.startsWith("0822")||nomor.startsWith("0852")||
+nomor.startsWith("0853")){
+hasil="Operator: Telkomsel";
+}
+
+else if(nomor.startsWith("0817")||nomor.startsWith("0818")||nomor.startsWith("0819")||
+nomor.startsWith("0859")||nomor.startsWith("0877")||nomor.startsWith("0878")){
+hasil="Operator: XL";
+}
+
+else if(nomor.startsWith("0814")||nomor.startsWith("0815")||nomor.startsWith("0816")||
+nomor.startsWith("0855")||nomor.startsWith("0856")||nomor.startsWith("0857")){
+hasil="Operator: Indosat";
+}
+
+else if(nomor.startsWith("0895")||nomor.startsWith("0896")||
+nomor.startsWith("0897")||nomor.startsWith("0898")||nomor.startsWith("0899")){
+hasil="Operator: Tri";
+}
+
+else if(nomor.startsWith("0881")||nomor.startsWith("0882")||
+nomor.startsWith("0883")||nomor.startsWith("0884")||nomor.startsWith("0885")){
+hasil="Operator: Smartfren";
+}
+
+document.getElementById("hasil").innerHTML = hasil;
+
+}
+</script>
